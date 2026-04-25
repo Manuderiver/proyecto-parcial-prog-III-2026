@@ -1,8 +1,8 @@
 # Proyecto Parcial Programación III
 
 ## Integrantes
-- Manuel Aguilar
-- sugga222
+- Manuel Aguilar (Manuderiver)
+- Agustin Gonzalez (sugga222)
 
 ## Descripción
 Aplicación web con múltiples contadores independientes, con botones para incrementar, decrementar y reiniciar todos los contadores.
