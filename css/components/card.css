@@ -1,0 +1,82 @@
+/* ===========================
+   TARJETAS (CARDS)
+   =========================== */
+.card {
+  background-color: var(--color-card);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: 0 4px 12px var(--color-shadow);
+  border: 2px solid var(--color-border);
+  transition: var(--transition);
+  text-align: center;
+  width: 280px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+/* Estado cuando contador es cero */
+.card.cero {
+  opacity: 0.8;
+  background-color: #f3f4f6;
+}
+
+/* ===========================
+   CONTADOR
+   =========================== */
+.contador {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: var(--spacing-lg) 0;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.card:hover .contador {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   CONTENEDOR DE BOTONES
+   =========================== */
+.botones {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contador {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contador {
+    font-size: 2rem;
+  }
+}
