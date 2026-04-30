@@ -1,6 +1,4 @@
-/* ===========================
-   TARJETAS (CARDS)
-   =========================== */
+
 .card {
   background-color: var(--color-card);
   border-radius: var(--border-radius);

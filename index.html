@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Contadores</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+<header>
+  <h1>⏱️ Panel de Contadores</h1>
+  <p>Cada tarjeta funciona de manera independiente</p>
+</header>
+
+<main>
+  <section class="contenedor-contadores">
+    
+    <div class="card">
+      <div class="card-header">
+        <h2>Contador 1</h2>
+        <span class="badge">Inactivo</span>
+      </div>
+      <p class="contador">0</p>
+      <div class="botones">
+        <button class="restar">−</button>
+        <button class="sumar">+</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Contador 2</h2>
+        <span class="badge">Inactivo</span>
+      </div>
+      <p class="contador">0</p>
+      <div class="botones">
+        <button class="restar">−</button>
+        <button class="sumar">+</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Contador 3</h2>
+        <span class="badge">Inactivo</span>
+      </div>
+      <p class="contador">0</p>
+      <div class="botones">
+        <button class="restar">−</button>
+        <button class="sumar">+</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Contador 4</h2>
+        <span class="badge">Inactivo</span>
+      </div>
+      <p class="contador">0</p>
+      <div class="botones">
+        <button class="restar">−</button>
+        <button class="sumar">+</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Panel de Estadísticas -->
+  <div class="panel-stats">
+    <div class="stat-card">
+      <h3>Total</h3>
+      <p id="total">0</p>
+    </div>
+    <div class="stat-card">
+      <h3>Promedio</h3>
+      <p id="promedio">0.00</p>
+    </div>
+    <div class="stat-card">
+      <h3>Máximo</h3>
+      <p id="maximo">0</p>
+    </div>
+  </div>
+
+  <div class="acciones-globales">
+    <button id="reiniciar" class="btn-reiniciar">🔄 Reiniciar Todos</button>
+  </div>
+
+</main>
+
+<!-- Scripts -->
+<script src="./js/script.js"></script>
+
+</body>
+</html>
